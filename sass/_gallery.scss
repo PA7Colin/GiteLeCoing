@@ -1,0 +1,175 @@
+.gallery {
+    background-color: $shadowbgcolor;
+    box-shadow: 0 0 0.3rem darken($shadowbgcolor,40%);
+    margin: 0 auto;
+    padding: 3rem;
+    &__title {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    & h3 {
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+    }
+    &__slider {
+        max-width: 800px;
+        display: flex;
+        margin: auto;
+        overflow-x: scroll;
+        overflow: hidden;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch; /* Permet le défilement tactile sur iOS */
+        box-shadow: 0.25rem 0.25rem 0.5rem rgb(0 0 0 / 35%);
+        border-radius: 1rem;
+        cursor: pointer;
+        img {
+            
+            scroll-snap-align: start;
+            flex: 0 0 100%;
+            max-width: 100%;
+            height: auto;
+            max-height: 500px;
+            object-fit: cover;
+            &:hover {
+                transform: scale(1.02);
+                transition: all 300ms ease-in-out;
+            }
+        }
+    }
+    &__thumbnails {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+        img {
+            width: 80px;
+            height: 60px;
+            margin: 0 5px;
+            cursor: pointer;
+
+        }
+        button {
+            @include btnprimary;
+            background-image: linear-gradient(0deg, $colorprimary , $ecocolor);
+            margin-left: 2rem;
+            border-radius: 1rem;
+            
+
+        }
+    }
+}
+
+.slider-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+
+.scroll-left,
+.scroll-right {
+    display: none;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+    color: darken($bgheader,50%);
+    text-align: center;
+    line-height: 30px;
+    font-size: 50px;
+    cursor: pointer;
+    z-index: 1;
+    
+    & i {
+        opacity: 0.8;
+    }
+}
+.scroll-left {
+    padding-left: 1rem;
+}
+.scroll-right {
+    padding-right: 1rem;
+}
+
+.scroll-left {
+    left: 0;
+}
+
+.scroll-right {
+    right: 0;
+}
+
+
+
+
+/* ... (le reste du CSS reste inchangé) */
+
+/* Styles pour la fenêtre modale */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 50px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+    display: block;
+    margin: 0 auto;
+    max-width: 90%;
+    max-height: 90%;
+    z-index: 3;
+}
+
+.close-modal {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.modal-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+    z-index: 2;
+    display: none;
+}
+
+.modal-prev {
+    left: 20px;
+}
+
+.modal-next {
+    right: 20px;
+}
+
+#gallery-counter {
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0 0.5rem 0 ;
+}
+
+#intro-text {
+    opacity: 0; /* Texte initiallement invisible */
+    transition: opacity 2s ease-in-out; /* Animation de la propriété d'opacité */
+}
+
+#intro-text.visible {
+    opacity: 1;
+}
+

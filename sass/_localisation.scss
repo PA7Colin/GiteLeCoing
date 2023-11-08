@@ -1,0 +1,12 @@
+.localisation {
+    padding: 1rem;
+    background-color: $shadowbgcolor1;
+    border-radius: 1rem;
+    padding-bottom: 2rem;
+    & h2::after {
+        @include underscore;
+        width: 100px;
+    }
+
+   
+}

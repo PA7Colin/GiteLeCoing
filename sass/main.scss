@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
+
+@import'./utils/variables';
+
+@import'./utils/mixins';
+
+@import'./header';
+@import'./explorer';
+@import'./gallery';
+@import'./description';
+@import'./localisation';
+@import './swiperjs';
+@import'./equipments';
+@import'./footer';
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #fffafa;
+    color: $fontcolor;
+    font-family: $font1;
+    max-width: 100% !important;
+}
+
+.marginauto {
+    max-width: 1400px;
+    margin: auto;
+}
+
+h2 {
+    font-family: $font2 ;
+    font-weight: 300;
+}
+

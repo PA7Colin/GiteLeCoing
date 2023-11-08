@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords"
+		content="Gite de france,nature,Séjour détente, location gite, Chambres d'hôtes,Weekend à la campagne,location gite, gite maine et loire, gite en pleine nature">
+	<meta name="description"
+		content="Découvrez notre gîte en pleine nature. Profitez de vacances relaxantes et d'activités de plein air. Réservez votre séjour dès maintenant.">
+    <title>Domaine du Vignoble</title>
+    <script src="https://kit.fontawesome.com/63867b63ad.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="style.css">
+
+<body>    
+    <header>
+        <div class="logo">
+            <img src="./images/logo3.png" alt="Logo du Gîte">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#equipements">Équipements</a></li>
+                <li><a href="#activites">Activités et Loisirs</a></li>
+                <li><a href="#avis">Avis</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="loc">
+            <i class="fa-solid fa-location-dot"></i>
+            <h1 class="loc__h1">Gite Le Coing - Sevremoine, Maine-et-Loire</h1>
+        </div>
+
+        <article class="explorer">
+            <h2 class="explorer__title">"Découvrez un havre de paix au cœur de la nature." </h2>
+            <p>
+                Notre gîte, niché dans un cadre naturel d'une beauté exceptionnelle,
+                vous offre l'opportunité de vous échapper du tumulte de la vie quotidienne. </br>Avec un accueil chaleureux et une ambiance conviviale,
+                notre refuge en pleine nature est l'endroit idéal pour vous ressourcer.
+            </p>
+            </br>
+            <a href="mailto:votreadresse@mail.fr" class="explorer__btn"> Contactez Nous </a>
+        </article>
+
+
+
+        <section class="gallery">
+            <section class="gallery__title">
+                <h3 id="intro-text"> "Découvrez la beauté naturelle de notre gîte à travers notre galerie de photos. </br> Chaque image capture l'essence de notre retraite en pleine nature, où détente, aventure et tranquillité se rencontrent."</h3>
+            </section>
+            <div class="slider-container">
+                <div class="gallery__slider">
+                    <div class="scroll-left"><i class="fa-solid fa-chevron-left"></i></div>
+                    <img src="./images/photobruno/20230819_150718.jpg" alt="Image 25">
+                    <img src="./images/photobruno/20230819_150743plx.jpg" alt="Image 26">
+                    <img src="./images/photobruno/20230819_150614.jpg" alt="Image 20">
+                    <img src="./images/photobruno/20230819_150643.jpg" alt="Image 22">
+                    <img src="./images/photobruno/20230819_150651.jpg" alt="Image 23">
+                    <img src="./images/photobruno/20230819_150705.jpg" alt="Image 24">
+                    <img src="./images/photobruno/20230819_150803.jpg" alt="Image 27">
+                    <img src="./images/photobruno/20230819_142713.jpg" alt="Image 1">
+                    <img src="./images/photobruno/20230819_142722.jpg" alt="Image 2">
+                    <img src="./images/photobruno/20230819_142743.jpg" alt="Image 3">
+                    <img src="./images/photobruno/20230819_142807.jpg" alt="Image 4">
+                    <img src="./images/photobruno/20230819_142831.jpg" alt="Image 5">
+                    <img src="./images/photobruno/20230819_142854.jpg" alt="Image 6">
+                    <img src="./images/photobruno/20230819_142918.jpg" alt="Image 7">
+                    <img src="./images/photobruno/20230819_143000.jpg" alt="Image 8">
+                    <img src="./images/photobruno/20230819_143012.jpg" alt="Image 9">
+                    <img src="./images/photobruno/20230819_143104.jpg" alt="Image 10">
+                    <img src="./images/photobruno/20230819_143117.jpg" alt="Image 11">
+                    <img src="./images/photobruno/20230819_143126.jpg" alt="Image 12">
+                    <img src="./images/photobruno/20230819_143132.jpg" alt="Image 13">
+                    <img src="./images/photobruno/20230819_143146.jpg" alt="Image 14">
+                    <img src="./images/photobruno/20230819_143154.jpg" alt="Image 15">
+                    <img src="./images/photobruno/20230819_143212.jpg" alt="Image 16">
+                    <img src="./images/photobruno/20230819_143231.jpg" alt="Image 17">
+                    <img src="./images/photobruno/20230819_143236.jpg" alt="Image 18">
+                    <img src="./images/photobruno/20230819_150611.jpg" alt="Image 19">
+                    <img src="./images/photobruno/20230819_150629.jpg" alt="Image 21">
+                </div>
+                <div class="scroll-right"><i class="fa-solid fa-chevron-right"></i></div>
+            </div>
+            <div id="gallery-counter"></div>
+
+            <div class="gallery__thumbnails">
+                <img src="./images/photobruno/20230819_150718.jpg" alt="Image 25">
+                <img src="./images/photobruno/20230819_150743plx.jpg" alt="Image 26">
+                <img src="./images/photobruno/20230819_150614.jpg" alt="Image 20">
+                <button id="show-more-button">Voir les autres photos</button>
+            </div>
+            <!-- Bouton pour voir les autres photos -->
+        </section>
+        <div class="modal">
+            <span class="close-modal">&times;</span>
+            <img class="modal-content" id="modal-image">
+            <!-- Ajoutez des flèches de navigation -->
+            <span class="modal-nav modal-prev">&#9664;</span>
+            <span class="modal-nav modal-next">&#9654;</span>
+        </div>
+
+        
+        <div class="marginauto">
+            <div class="description">
+                <h2>Capacité d'accueil et infos</h2>
+                <div class="description__container">
+                    <div class="description__detail">
+                        <p>Capacités</p>
+                        <span>5 personnes</span>
+                    </div>
+                    <div class="description__detail">
+                        <p>Chambres</p>
+                        <span>2 chambres</span>
+                    </div>
+                    <div class="description__detail">
+                        <p>Surface</p>
+                        <span>80 m²</span>
+                    </div>
+                    <div class="description__detail">
+                        <p>WiFi</p>
+                        <span><i class="fa-solid fa-wifi"></i></span>
+                    </div>
+                    <div class="description__detail">
+                        <p>Animaux</p>
+                        <span><i class="fa-solid fa-paw"></i></span>
+                    </div>
+                </div>
+                <div class="paiement">
+                    <strong>Paiements acceptés</strong>
+                    <div class="paiement__card">
+                        <img src="./images/paiement/carte_bleue.png" alt="carte bleue">
+                        <img src="./images/paiement/ancv.jpg" alt="ancv">
+                        <img src="./images/paiement/carte.png" alt="carte mastercard">
+                        <img src="./images/paiement/visa.png" alt="carte visa">
+                        <img src="./images/paiement/cheque.png" alt="cheque">
+                        <img src="./images/paiement/carte-cadeau.png" alt="cheque cadeau">
+                        <img src="./images/paiement/rib.png" alt="rib">
+                    </div>
+                </div>
+                <div class="other">
+                    <strong> Le prix comprend:</strong>
+                    <p>Animaux de compagnie, WIFI/Internet</p>
+                    <strong>Le prix ne comprend pas:</strong>
+                    <p>Draps, Ménage de fin de séjour</p>
+                    <strong>Caution:</strong>
+                    <p>Montant de la caution: <span>150€</span></p>
+
+                </div>
+            </div>
+            <aside class="details">
+                <p class="details__visible">À mi-chemin entre Nantes et Cholet, la Guiltière est un petit village de 150 habitants posé au milieu des vignes. Un point de chute idéal pour partir à la découverte de la région ...</p>
+                <p id="hidden-text">Nantes et sa métropole atlantique (à 45 mn), Cholet, (à 28 mn), Clisson, ses inspirations italiennes et son festival Hellfest (à 15 mn), le vignoble nantais, les bords de Sèvre, le bocage vendéen et la côte Atlantique (accessible en 1h depuis le gîte). Vous profiterez également de nombreux chemins de randonnée présents à proximité de ce gîte, vous proposant de belle balades au cœur des vignes. Pour les amateurs de pêche, de nombreux spots présents aux alentours de l'hébergement vous combleront. Cette maison datant de 1710 est située dans une impasse calme au cœur du petit hameau de la Guiltière. Depuis la pièce de vie, vous accédez à une terrasse privée surplombant un coteau avec ruisseau, jardin paysagé avec une vue magnifique sur la campagne environnante. Un barbecue et un salon de jardin vous sont dédiés. Des hamacs et chaises longues vous invitent également à vous prélasser au milieu des palmiers. Au rez-de-chaussée, vous retrouvez un espace séjour avec salon et poêle à bois pour vous réchauffer lors des soirées d'hiver. Un écran plat ainsi qu'une barre de son sont également présents. Une cuisine ouverte et équipée est également à votre disposition, avec un espace repas. Un WC indépendant est également présent. A l'étage, vous retrouvez deux chambres. La première se compose d'un lit double 160cm. La seconde chambre est équipée de trois lits 90cm X 190cm. Une salle d'eau avec douche ainsi qu'un WC indépendant se trouvent sur cet étage. Un abri pour voiture non fermé vous est également proposé (situé sur la voie publique). Vous pouvez disposer d'une connexion internet en wifi et d'un lit bébé sur demande. L'électricité est en supplément au-delà des 8 kwh (chauffage électrique). Pour le poêle à bois, la première flambée vous est offerte par les propriétaires. Le bois n'étant pas fourni, vous pouvez en acheter directement auprès des propriétaires ou à proximité de l'hébergement.</p>
+                <div class="details__flex">
+                    <button id="show-more">Afficher plus</button>
+                </div>
+            </aside>
+        </div>
+        
+        <section class="localisation">
+            <div class="marginauto">
+                <h2>Localisation</h2>
+                <div class="localisation__map">
+                    <map name="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3227.8575224057927!2d-1.23167784118577!3d47.13250942876146!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48060b53a8c83079%3A0xe5c03a6f96d61238!2s23%20Imp.%20du%20Coin%2C%2049230%20Tilli%C3%A8res!5e0!3m2!1sfr!2sfr!4v1697452612992!5m2!1sfr!2sfr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </map>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="equipments">
+            <div class="marginauto">
+                <h2>Thème du gite</h2>
+                <div class="equipments__theme">
+                    <img src="./images/campagne.png" alt="campagne">
+                    <figcaption>Campagne</figcaption>
+                    <img src="./images/nature.png" alt="campagne">
+                    <figcaption>Nature et détente</figcaption>
+                    <img src="./images/eco.png" alt="campagne">
+                    <figcaption>Éco résponsable</figcaption>
+                    <img src="./images/fete.png" alt="campagne">
+                    <figcaption>Animaux autorisés</figcaption>
+                </div>
+                <h2>Vos Hôtes</h2>
+                <div class="equipments__host">
+                    <div class="equipments__container">
+                        <img src="./images/host.png" alt="Vos hôtes">
+                        <strong>Bruno et Monique</strong>
+                        <img src="./images/gite.png" id="gite" alt="Logo gite de france">
+                        <strong>Labellisé Gîtes de France : </strong><p>depuis 2006</p>
+                    </div>
+                </div>
+                <h2>Équipements</h2>
+                <div class="equipments__loot">
+                    <div class="equipments__ul">
+                        <h4>Intérieur</h4>
+                        <ul>
+                            <li>Télévision</li>
+                            <li>Lave-vaisselle</li>
+                            <li>Micro-ondes</li>
+                            <li>Lave-linge</li>
+                            <li>Congélateur</li>
+                            <li>Poêle à bois</li>
+                        </ul>
+                        <h4>Extérieur</h4>
+                        <ul>
+                            <li>Terrasse</li>
+                            <li>Barbecue</li>
+                            <li>Salon de jardin</li>
+                            <li>Terrain privée</li>
+                        </ul>
+                        <h4>Services</h4>
+                        <ul>
+                            <li>Wifi-Internet</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swipercontainer">
+                <!-- Slider main container -->
+                <div class="swiper mySwiper">
+                    <h2>Loisirs et commodités</h2>
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <strong>5km</strong>
+                            <p>Médecin</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <strong>5km</strong>
+                            <p>Pharmacie</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <strong>6km</strong>
+                            <p>Restaurant</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <strong>6km</strong>
+                            <p>Equitation</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <strong>6km</strong>
+                            <p>Marché</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <strong>6km</strong>
+                            <p>Transports</p>
+                        </div> 
+                        <div class="swiper-slide">
+                            <strong>6km</strong>
+                            <p>Cinéma</p>
+                        </div> 
+                        <div class="swiper-slide">
+                            <strong>6km</strong>
+                            <p>Piscine</p>
+                        </div> 
+                        <div class="swiper-slide">
+                            <strong>7km</strong>
+                            <p>Commerce</p>
+                        </div> 
+                        <div class="swiper-slide">
+                            <strong>10km</strong>
+                            <p>Gare ferroviaire</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <strong>10km</strong>
+                            <p>Pêche</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <strong>15km</strong>
+                            <p>Lac</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <strong>15km</strong>
+                            <p>Zoo</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <strong>25km</strong>
+                            <p>Sport nautique</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <strong>25km</strong>
+                            <p>Hopitaux</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <strong>25km</strong>
+                            <p>Patinoire</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <strong>35km</strong>
+                            <p>Aéroport</p>
+                        </div>        
+                        <div class="swiper-pagination"></div>
+                        <!-- If we need pagination-->
+                    </div>
+                </div>
+            </div>
+        
+                    
+
+                        
+  
+  
+
+          
+                            
+                        
+                    
+
+        </section>
+        
+
+
+            
+            
+
+
+
+
+                    
+
+
+
+
+
+
+
+
+
+        <footer id="">
+            <div class="marginauto">
+                
+            </div>
+
+        </footer>
+    
+    </main> 
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script src="./js/script.js" defer ></script>
+<script src="./js/app.js" defer></script>
+</body>
+</html>

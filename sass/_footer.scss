@@ -1,4 +1,29 @@
-footer {
-    height: 300px;
+.footer {
     background-color: $colorprimary ;
+    padding: 2rem;
+    &__container {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__link {
+        display: flex;
+        flex-direction: column;
+        a {
+            margin-bottom: 16px;
+        }
+    }
+    a {
+        text-decoration: none;
+        color: $fontcolor;
+    }
+    i {
+        font-size: 30px;
+        margin-right: 1.5rem;
+    }
+    & h3::after {
+        @include underscore;
+        background-color: $ecocolor;
+    }
+
 }
+

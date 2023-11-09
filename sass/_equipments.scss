@@ -1,3 +1,7 @@
+#petfriend {
+    height: 60px;
+    width: 60px;
+}
 .equipments {
     padding: 1rem 0;
     font-weight: bolder;
@@ -13,12 +17,13 @@
     &__theme {
         display: flex;
         align-items: center;
+        margin-top: 4rem;
     }
     &__theme img {
-        width: 125px;
-        height: 125px;
+        width: 75px;
+        height: 75px;
         margin-left: 3rem;
-        margin-right: 0.5rem;
+        margin-right: 1rem;
     }
     &__container {
         display: flex;
@@ -71,8 +76,26 @@
     &__option {
         max-width: 1400px;
         margin: auto;
+        font-weight: 300;
+        ul {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            list-style: none;
+            margin: 4rem 0 3rem 0;
+        }
+        li {
+            border-right: 2px solid $colorprimary;
+            padding: 1rem 1.5rem 1rem 1rem;
+        }
+        strong {
+            color: $ecocolor;
+            margin-right: 3px;
+        }
     }
 }
+
+
     
 #gite {
     height: 50px;

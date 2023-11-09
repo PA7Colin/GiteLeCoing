@@ -24,6 +24,14 @@
         @include underscore;
         background-color: $ecocolor;
     }
+    img {
+        height: 150px;
+        width: 150px;
+        margin-top: 1.5rem;
+        border-radius: 1rem;
+        border-right: 1.5px solid black;
+        border-left: 1.5px solid black;
+    }
 
 }
 

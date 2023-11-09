@@ -1,7 +1,6 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Old+Standard+TT&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap");
-/* Styles pour le header */
 header {
   display: flex;
   justify-content: space-between;
@@ -19,18 +18,18 @@ header {
 }
 
 nav ul {
-  list-style-type: none; /* Suppression des puces de liste */
-  margin: 0; /* Suppression de la marge extérieure */
-  padding: 0; /* Suppression de la marge intérieure */
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 nav ul li {
-  display: inline; /* Affichage en ligne des éléments de la liste */
-  margin-right: 20px; /* Espacement entre les éléments de la liste */
+  display: inline;
+  margin-right: 20px;
 }
 
 nav ul li a {
-  text-decoration: none; /* Suppression du soulignement des liens */
+  text-decoration: none;
   color: #1d1d20;
   position: relative;
   padding-bottom: 0.5rem;
@@ -40,17 +39,17 @@ nav ul li a::before {
   content: "";
   position: absolute;
   width: 100%;
-  height: 3px; /* Hauteur de la ligne sous le texte */
+  height: 3px;
   bottom: 0;
   left: 0;
-  background-color: #4aa777; /* Couleur de soulignement */
-  transform: scaleX(0); /* Initialement invisible */
+  background-color: #4aa777;
+  transform: scaleX(0);
   transform-origin: bottom right;
   transition: transform 0.3s ease-in-out;
 }
 
 nav ul li a:hover::before {
-  transform: scaleX(1); /* Soulignement complet au survol */
+  transform: scaleX(1);
   transform-origin: bottom left;
 }
 
@@ -453,6 +452,11 @@ nav ul li a:hover::before {
   transition: all 500ms ease-in-out;
 }
 
+#petfriend {
+  height: 60px;
+  width: 60px;
+}
+
 .equipments {
   padding: 1rem 0;
   font-weight: bolder;
@@ -474,12 +478,13 @@ nav ul li a:hover::before {
 .equipments__theme {
   display: flex;
   align-items: center;
+  margin-top: 4rem;
 }
 .equipments__theme img {
-  width: 125px;
-  height: 125px;
+  width: 75px;
+  height: 75px;
   margin-left: 3rem;
-  margin-right: 0.5rem;
+  margin-right: 1rem;
 }
 .equipments__container {
   display: flex;
@@ -534,6 +539,22 @@ nav ul li a:hover::before {
 .equipments__option {
   max-width: 1400px;
   margin: auto;
+  font-weight: 300;
+}
+.equipments__option ul {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 4rem 0 3rem 0;
+}
+.equipments__option li {
+  border-right: 2px solid #AEDBC4;
+  padding: 1rem 1.5rem 1rem 1rem;
+}
+.equipments__option strong {
+  color: #4BAB77;
+  margin-right: 3px;
 }
 
 #gite {
@@ -573,6 +594,14 @@ nav ul li a:hover::before {
   background-color: #AEDBC4;
   margin-top: 5px;
   background-color: #4BAB77;
+}
+.footer img {
+  height: 150px;
+  width: 150px;
+  margin-top: 1.5rem;
+  border-radius: 1rem;
+  border-right: 1.5px solid black;
+  border-left: 1.5px solid black;
 }
 
 body {

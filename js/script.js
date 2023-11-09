@@ -186,13 +186,10 @@ document.addEventListener("DOMContentLoaded", function() {
         modalImages[0].style.display = "block";
     });
 
-    // Gestionnaire d'événement pour fermer la fenêtre modale (assurez-vous d'avoir ce code déjà en place)
+    // Gestionnaire d'événement pour fermer la fenêtre modale
     closeModalButton.addEventListener("click", function() {
         modal.style.display = "none";
     });
-
-    // Vous pouvez également ajouter un code pour naviguer entre les images dans la fenêtre modale
-    // Assurez-vous d'avoir la logique de navigation déjà en place pour les flèches modales
 });
 
 

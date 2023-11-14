@@ -89,7 +89,6 @@ nav ul li a:hover::before {
   header {
     background-image: url(./images/banner.webp);
     background-size: cover;
-    opacity: 0.9;
     box-shadow: 0 0 0.2rem #327251;
     border-radius: 0 0 1rem 1rem;
   }
@@ -167,6 +166,9 @@ nav ul li a:hover::before {
     position: relative;
     margin-top: -1rem;
     box-shadow: 0 0 0.2rem #777777;
+  }
+  .loc__h1 {
+    padding: 0 1rem;
   }
   .explorer {
     box-shadow: none;

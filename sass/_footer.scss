@@ -32,6 +32,18 @@
         border-right: 1.5px solid black;
         border-left: 1.5px solid black;
     }
+    &__arrow, &__arrow i {
+        display: flex;
+        align-items: center;
+        i {
+            background-color: $ecocolor;
+            border: 1px solid $ecocolor;
+            padding: 1rem;
+            border-radius: 50%;
+            box-shadow: $boxshadow;
+            color: $colorprimary;
+        }
+    }
 
 }
 

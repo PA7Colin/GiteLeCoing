@@ -4,7 +4,8 @@ header {
     align-items: center;
     padding: 1.5rem;
     font-size: 25px;
-    background-color: $shadowbgcolor1;
+    background-color: lighten($colorprimary,20%);
+    max-width: 100%;
 }
 
 .logo img {
@@ -52,3 +53,54 @@ nav ul li a:hover::before {
     transform-origin: bottom left;
 }
 
+@media all and (max-width: 825px) {
+    .logo img {
+        height: 100px;
+        width: 100px;
+        margin-right: 1rem;
+    }
+    header {
+        font-size: 18px;
+        text-transform: uppercase;
+        font-weight: 500;
+
+    }
+    header nav ul li {
+        margin-right: 5px;
+    }
+    header ul {
+       display: grid;
+       grid-template-columns: auto 2fr;
+       width: auto;
+       gap: 1rem;
+       
+        
+    }
+
+}
+
+@media all and (max-width: 768px) {
+    header {
+        background-image: url(../images/banner.png);
+        background-size: cover;
+        opacity: 0.9;
+        box-shadow: 0 0 0.2rem darken($bgheader,50%);
+        border-radius: 1rem;
+        
+    }
+    header nav {
+        display: none;
+    }
+    .logo {
+        width: 100% !important;
+        height: 200px;
+    }
+    .logo img {
+
+        display: none;
+        
+    }
+    .loc {
+        display: none;
+    }
+}

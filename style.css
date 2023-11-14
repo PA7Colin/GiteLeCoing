@@ -87,7 +87,7 @@ nav ul li a:hover::before {
     display: none;
   }
   header {
-    background-image: url(./images/banner.webp);
+    background-image: url(./images/banner.png);
     background-size: cover;
     box-shadow: 0 0 0.2rem #327251;
     border-radius: 0 0 1rem 1rem;

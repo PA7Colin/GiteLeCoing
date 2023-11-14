@@ -77,7 +77,7 @@ nav ul li a:hover::before {
 }
 @media all and (max-width: 768px) {
   header {
-    background-image: url(../images/banner.png);
+    background-image: url(../images/banner.webp);
     background-size: cover;
     opacity: 0.9;
     box-shadow: 0 0 0.2rem #327251;

@@ -59,12 +59,12 @@
         position: relative;
         margin-top: -1rem;
         box-shadow: 0 0 0.2rem darken($shadowbgcolor,50%);
-        &__h1 {
-            padding: 0 1rem;
-        }
     }
     .explorer {
         box-shadow: none;
         margin-top: 2rem;
+    }
+    .loc h1 {
+        padding: 0 1rem;
     }
 }

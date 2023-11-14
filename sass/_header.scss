@@ -80,14 +80,6 @@ nav ul li a:hover::before {
 }
 
 @media all and (max-width: 768px) {
-    header {
-        background-image: url(../images/banner.webp);
-        background-size: cover;
-        opacity: 0.9;
-        box-shadow: 0 0 0.2rem darken($bgheader,50%);
-        border-radius: 1rem;
-        
-    }
     header nav {
         display: none;
     }
@@ -96,11 +88,19 @@ nav ul li a:hover::before {
         height: 200px;
     }
     .logo img {
-
+        
         display: none;
         
     }
     .loc {
         display: none;
+    }
+    header {
+        background-image: url(../images/banner.webp), url(../images/banner.png);
+        background-size: cover;
+        opacity: 0.9;
+        box-shadow: 0 0 0.2rem darken($bgheader,50%);
+        border-radius: 0 0 1rem 1rem;
+        
     }
 }
